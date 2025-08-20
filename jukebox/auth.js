@@ -29,4 +29,8 @@ const token = getTokenFromUrl();
 if (token) {
   window.token = token;
   console.log("Logged in with token:", token);
+
+  // Call showPlaylists if spotify.js is loaded
+  if (typeof showPlaylists === "function") {
+    showPlaylists();
 }
