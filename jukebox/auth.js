@@ -29,4 +29,11 @@ const token = getTokenFromUrl();
 if (token) {
   window.token = token;
   console.log("Logged in with token:", token);
+  
+  // Show logged-in message
+  const status = document.getElementById("loginStatus");
+  status.textContent = "✅ You are logged in with Spotify!";
+  
+  // Optionally hide the login button
+  document.getElementById("loginBtn").style.display = "none";
 }
