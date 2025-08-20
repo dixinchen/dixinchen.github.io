@@ -24,6 +24,7 @@ function getTokenFromUrl() {
 }
 
 const token = getTokenFromUrl();
+window.token = token; 
 
 if (!token) {
   login();
