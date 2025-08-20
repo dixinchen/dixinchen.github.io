@@ -1,5 +1,5 @@
 // auth.js
-const clientId = "c21340f1c4a944ebb4ec5f67dce2eb3e"; // replace with your Client ID
+const clientId = "f8f5bd245ea54c508891e50e6cd43288"; // replace with your Client ID
 const redirectUri = "https://dixinchen.github.io./jukebox/index.html#"; // window.location.origin + window.location.pathname; // same URL you set in Spotify Dashboard
 const scopes = [
   "streaming",
@@ -25,12 +25,7 @@ function getTokenFromUrl() {
   return params.get("access_token");
 }
 
-const token = getTokenFromUrl();
-if (token) {
-  window.token = token;
-  console.log("Logged in with token:", token);
-  showPlaylists();
-}
+const token = "BQBho02ego8R_HqSPgYSqiC7Sx3CxoF3QXT8wE-Zujlw8E6r2Vv9Xh4pvoLRalhauO1xZWpt2NF8p1d2C0UKTbyN7zeWHE1_PsEqXh5a1LEXVuBH3UmplC4jSn60DO1x1cGKkbwu8vI"
 
 async function getPlaylists(token) {
   const response = await fetch("https://api.spotify.com/v1/me/playlists", {
