@@ -17,6 +17,8 @@ function login() {
   window.location = authUrl;
 }
 
+document.getElementById("loginBtn").addEventListener("click", login);
+
 function getTokenFromUrl() {
   const hash = window.location.hash.substring(1);
   const params = new URLSearchParams(hash);
@@ -24,11 +26,7 @@ function getTokenFromUrl() {
 }
 
 const token = getTokenFromUrl();
-window.token = token; 
-
-if (!token) {
-  login();
-} else {
+if (token) {
+  window.token = token;
   console.log("Logged in with token:", token);
-  // Later we’ll use this token to call Spotify APIs
 }
