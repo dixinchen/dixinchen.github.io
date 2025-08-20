@@ -29,6 +29,4 @@ const token = getTokenFromUrl();
 if (token) {
   window.token = token;
   console.log("Logged in with token:", token);
-  if (typeof showPlaylists === "function") {
-    showPlaylists();
 }
