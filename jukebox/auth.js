@@ -1,6 +1,6 @@
 // auth.js
 const clientId = "c21340f1c4a944ebb4ec5f67dce2eb3e"; // replace with your Client ID
-const redirectUri = "https://dixinchen.github.io/jukebox/index.html" // window.location.origin + window.location.pathname; // same URL you set in Spotify Dashboard
+const redirectUri = "https://dixinchen.github.io./index.html#" // window.location.origin + window.location.pathname; // same URL you set in Spotify Dashboard
 const scopes = [
   "streaming",
   "user-read-email",
