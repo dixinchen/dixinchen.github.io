@@ -11,7 +11,7 @@ const scopes = [
 ];
 
 function login() {
-  const authUrl = `https://accounts.spotify.com/authorize?client_id=c21340f1c4a944ebb4ec5f67dce2eb3e&redirect_uri=${encodeURIComponent(
+  const authUrl = `https://accounts.spotify.com/authorize?client_id=f8f5bd245ea54c508891e50e6cd43288&redirect_uri=${encodeURIComponent(
     redirectUri
   )}&scope=${encodeURIComponent(scopes.join(" "))}&response_type=token&show_dialog=true`;
   window.location = authUrl;
